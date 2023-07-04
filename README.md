@@ -15,6 +15,14 @@ The YouTube Transcript Summarizer is a web application that allows you to summar
 - youtube_transcript_api
 - sumy
 
+## Hosting on Render
+This application is hosted on Render, a modern cloud provider. You can find the live deployment of the application at the following link:
+YouTube Transcript Summarizer on Render
+
+## Chrome Extension
+We have also developed a Chrome Extension for easy access to the YouTube Transcript Summarizer. You can find and install the extension from the Chrome Extension Store using the link below:
+YouTube Transcript Summarizer Chrome Extension
+
 ## Getting Started
 
 1. Clone the repository:
@@ -41,15 +49,5 @@ http://localhost:5000/summay
 
 - [YouTubeTranscriptAPI](https://github.com/jdepoix/youtube-transcript-api)
 - [SumyLibrary](https://github.com/miso-belica/sumy)
-
-
-
-Hosting on Render
-This application is hosted on Render, a modern cloud provider. You can find the live deployment of the application at the following link:
-YouTube Transcript Summarizer on Render
-
-Chrome Extension
-We have also developed a Chrome Extension for easy access to the YouTube Transcript Summarizer. You can find and install the extension from the Chrome Extension Store using the link below:
-YouTube Transcript Summarizer Chrome Extension
 
 

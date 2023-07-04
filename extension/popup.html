@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Extension</title>
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+    <link rel="canonical" href="https://picocss.com/examples/basic-template/" />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 800px;
+            border: black;
+            border-radius: 20%;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        hgroup{
+          margin-left: 20px;
+        }
+
+        nav{
+          margin-left: 20px;
+        }
+
+        #summarise{
+          margin-left: 20px;
+          width: 30%;
+        }
+
+        article{
+          width: 90%;
+        }
+        #cont{
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          margin-top: 20px;
+          width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div>
+        <hgroup>
+        <h1>Youtube Summarizer</h1>
+        <h2>
+          This Extension only summarizes the Youtube vedios whose transcripts are in language English
+        </h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li>
+            <details role="list">
+              <summary aria-haspopup="listbox" role="button" class="secondary"
+                >Theme</summary
+              >
+              <ul role="listbox">
+                <li><a href="#" data-theme-switcher="light">Light</a></li>
+                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <button id="summarise" type="button">Summarise</button>
+      <div id="cont">
+        <p id="title"></p>
+        <p id="summary" style="display: flex; justify-content: center; align-items: center;"></p>
+        <p id="timestamp"></p>
+      </div>
+    </header>
+    <script src="popup.js"></script>
+    <script src="minimal-them.js"></script>
+</body>
+</html>
